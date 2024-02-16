@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+    --dark-green: #2E473B;
+    --medium-green: #4F6F60;
+    --light-green: #7D9B8F;
+    --white-green: #AEBFB3;
+    --black: #000000;
+}
+
+/* General styles */
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-green);
+    background-color: var(--white-green);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    color: var(--dark-green);
+    background-color: var(--white-green);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+header h2 {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+header p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.profile-picture {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 4px solid var(--dark-green);
+}
+
+/* Navigation styles */
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    flex-grow: 1;
+    padding: 0.2rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border: 2px solid var(--medium-green);
+    background-color: var(--white-green);
+    color: var(--dark-green);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.tab-button:hover,
+.tab-button.active {
+    background-color: var(--medium-green);
+    color: var(--white-green);
+}
+
+/* Tab content styles */
+.tabcontent {
+    padding: 1rem;
+    background-color: var(--medium-green);
+    color: var(--white-green);
+    margin: 0 10rem;
+    border-radius: 10px;
+}
+
+/* cv styles */
+.cv-item,
+.project-item {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    margin: 10px 0;
+    padding: 1px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-item:hover,
+.project-item:hover {
+    box-shadow: inset 0 0 5px var(--black);
+}
+
+.cv-item h4,
+.project-item h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.cv-item h5,
+.project-item h5 {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.cv-item p,
+.project-item p {
+    font-size: 0.9rem;
+}
+
+.cv-item ul,
+.project-item ul {
+    margin-top: 0.2rem;
+    list-style-type: square;
+    padding-left: 30px;
+    font-size: 0.9rem;
+}
+
+/* Footer styles */
+footer {
+    color: var(--dark-green);
+    background-color: var(--white-green);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+
+a {
+    color: var(--dark-green);
+}
+
+.social-icons {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-icons a {
+    color: var(--dark-green);
+    margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover {
+    color: var(--medium-green);
+}
+
+/* Add styles for the login form */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    margin: 100px auto;
+    background-color: var(--red-1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.login-container input[type="submit"] {
+    background-color: var(--brown-1);
+    color: var(--white-1);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: var(--brown-2);
+}
+
+.login-container a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* Add styles for the input fields */
+.input-field {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container {
+    width: 220px;
+    display: inline-flex;
+    position: relative;
+}
+
+.password-input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--red-1);
+}
+
+.password-toggle.active {
+    color: #50303675;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.show-password {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--brown-1);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form p {
+    color: red
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin: 1rem 0;
+        width: 100px;
+        height: auto;
+    }
+
+    nav li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    nav li:last-child {
+        margin-bottom: 1rem;
+    }
+}
+
+.code {
+    padding: 0.25em 0.5em;
+    font-size: 70%;
+    color: var(--white-green);
+    background-color: var(--dark-green);
+    border-radius: 4px;
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0
+}
