@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uku Kangur - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img class="profile-picture" src="uku-kangur.png" alt="Uku Kangur">
+        <div>
+            <h1>Uku Kangur</h1>
+            <h2><i>Estonian, European, Computer Scientist, Politics enthusiast </i></h2>
+            <p>Hi, I'm Uku Kangur. I'm a computer scientist researching the multifaceted issue of misinformation on social media platforms. My focus is on understanding how false information originates, spreads, and can be mitigated, with the ultimate goal of fostering a more trustworthy digital landscape.</p>
+            <p>Currently, I am a PhD student at the <a href="https://cs.ut.ee/en">University of Tartu Institute of Computer Science</a> in the <a href="https://css.cs.ut.ee/">Computational Social Science Group</a> and working under the supervision of <a href="https://rajeshsharma.cs.ut.ee/">Rajesh Sharma</a>.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/uku-kangur/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/ukukangur" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/ukangur" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/uku.kangur" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ukukangur/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <p class="code">uku.kangur [at] ut.ee<p>
+            </div>
+        </div>
+    </header>
+
+    <div class="tab">
+        <button id="defaultOpen" class="tab-button" onclick="openSection(event, 'Experience')">Work Experience</button>
+        <button class="tab-button" onclick="openSection(event, 'Education')">Education</button>
+        <button class="tab-button" onclick="openSection(event, 'Projects')">Projects</button>
+    </div>
+
+    <div id="Experience" class="tabcontent">
+        <h2>Work Experience</h3>
+          <div class="tab-item">
+            <h4>Junior Researcher</h4>
+            <h5>University of Tartu, Institute of Computer Science</h5>
+            <h6>September 2023 - ...</h6>
+            <p><strong>Responsibilities:</strong><br>
+              <li> Conducting research in the domain of misinformation and hate speech on social media
+              <li> Supervising and teaching classes in business data analytics and network science
+            <p>
+          </div>
+        <div class="tab-item">
+          <h4>AI Development Internship</h4>
+          <h5>European Commission (DG FISMA)</h5>
+          <h6>March 2023 - July 2023</h6>
+          <p><strong>Responsibilities:</strong><br>
+            <li> Developed functionality for DG FISMA's existing applications that makes use of AI algorithms to improve the user experience of the systems
+            <li> Developed algorithms capable of reading vast amounts of texts and extracting keywords or tags that describe the topics described in the text
+          <p>
+        </div>
+        <div class="tab-item">
+            <h4>Industry Collaboration Coordinator</h4>
+            <h5>University of Tartu Institute of Computer Science</h5>
+            <h6>June 2021 - June 2022</h6>
+            <p><strong>Responsibilities:</strong><br>
+              <li> Coordinated communication and project planning for incoming R&D projects with enterprises
+            <p>
+        </div>
+        <div class="tab-item">
+            <h4>Mathematics Teacher</h4>
+            <h5>Tartu Herbert Masing School</h5>
+            <h6>September 2020 - September 2021</h6>
+            <p><strong>Responsibilities:</strong><br>
+              <li> Taught primary and secondary school mathematics as part of the Estonian mandatory civil service
+            <p>
+        </div>
+        <div class="tab-item">
+            <h4>Innovation Centre Manager</h4>
+            <h5>SEB Bank</h5>
+            <h6>February 2020 - June 2021</h6>
+            <p><strong>Responsibilities:</strong><br>
+              <li> Coordinated Baltic scientific cooperation, mainly with the University of Tartu
+              <li> Developed Talents Program and iAcademy in partnership with the University of Tartu
+            <p>
+          </div>
+      </div>
+
+    <div id="Education" class="tabcontent">
+        <h2>Education</h2>
+        <div class="tab-item">
+          <h4>Doctor of Philosophy - Computer Science</h4>
+          <h5>University of Tartu</h5>
+          <p>September 2023 - Present</p>
+          <p>Specialization: Computational Social Science</p>
+          <p>Thesis supervisors: Rajesh Sharma</p>
+        </div>
+        <div class="tab-item">
+            <h3>Bachelor of Arts - European Studies</h3>
+            <p>KU Leuven</p>
+            <p>September 2022 - July 2023 (discontinued)</p>
+            <p>Specialization: Transnational Law and Politics</p>
+        </div>
+        <div class="tab-item">
+            <h3>Master of Science - Computer Science</h3>
+            <p>University of Tartu</p>
+            <p>September 2020 - June 2022</p>
+            <p>Specialization: Theoretical Computer Science (Quantum Computing)</p>
+            <p>Thesis supervisors: Javier Gil Vidal, Dirk Oliver Theis</p>
+        </div>
+        <div class="tab-item">
+            <h3>Bachelor of Science - Computer Science</h3>
+            <p>University of Tartu</p>
+            <p>September 2017 - June 2020</p>
+            <p>Specialization: Theoretical Computer Science (Coding theory)</p>
+            <p>Minor: Economics</p>
+            <p>Thesis supervisors: Vitaly Skachek, Boris Kudryashov, Irina Bocharova</p>
+        </div>
+      </div>
+
+      <div id="Projects" class="tabcontent">
+        <h2>Projects</h3>
+        <div class="tab-item">
+            <h3>QEC</h3>
+            <p>Quantum error correction Software for finding suitable logical Z and X gates given a set of commuting Pauli generators.</p>
+            <p>Technologies: Python</p>
+            <p><a href="https://github.com/ukangur/QEC"><i class="project-icon fab fa-github"></i><a></p>
+        </div>
+        <div class="tab-item">
+            <h3>LDPCGaussian</h3>
+            <p>Optimized version of Gaussian elimination meant for solving LDPC codes.</p>
+            <p>Technologies: Java</p>
+            <p><a href="https://github.com/ukangur/LDPCGaussian"><i class="project-icon fab fa-github"></i><a></p>
+        </div>
+        <div class="tab-item">
+            <h3>CText</h3>
+            <p>Simple text editor C++ project.</p>
+            <p>Technologies: C++</p>
+            <p><a href="https://github.com/ukangur/CText"><i class="project-icon fab fa-github"></i><a></p>
+        </div>
+        <div class="tab-item">
+            <h3>Personal Portfolio Page</h3>
+            <p>Personal portfolio page</p>
+            <p>Technologies: JavaScript, HTML, CSS</p>
+            <p><a href="https://github.com/ukangur/ukangur.github.io"><a><i class="project-icon fab fa-github"></i></p>
+        </div>
+      </div>
+
+    <script>
+        function openSection(evt, sectionName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tab-button");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(sectionName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <script>
+      function openSection(evt, sectionName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tab-button");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(sectionName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+
+      function setDefaultActiveTab() {
+          document.getElementById("defaultOpen").click();
+      }
+
+      window.onload = setDefaultActiveTab;
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Uku Kangur</p>
+      </footer>
+</body>
+</html>
