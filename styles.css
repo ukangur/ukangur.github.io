@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 :root {
-    --dark-green: #2E473B;
-    --medium-green: #4F6F60;
-    --light-green: #7D9B8F;
-    --white-green: #AEBFB3;
+    --text-primary: #462212;
+    --background-secondary: #6e553e;
+    --background-primary: #E7E2D4;
     --black: #000000;
 }
 
@@ -12,8 +11,8 @@
 body {
     font-family: 'Rubik', sans-serif;
     line-height: 1.6;
-    color: var(--dark-green);
-    background-color: var(--white-green);
+    color: var(--text-primary);
+    background-color: var(--background-primary);
     margin: 0;
     padding: 0;
 }
@@ -24,8 +23,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    color: var(--dark-green);
-    background-color: var(--white-green);
+    color: var(--text-primary);
+    background-color: var(--background-primary);
     width: 50%;
     margin: 0 auto;
     border-radius: 5px;
@@ -50,7 +49,7 @@ header p {
     height: auto;
     border-radius: 50%;
     margin-right: 1rem;
-    border: 4px solid var(--dark-green);
+    border: 4px solid var(--text-primary);
 }
 
 .tab {
@@ -59,7 +58,7 @@ header p {
     margin: 0 auto;
     justify-content: center;
     display: flex;
-    background-color: var(--white-green);
+    background-color: var(--background-primary);
     width: auto;
 }
 
@@ -67,8 +66,8 @@ header p {
     padding: 0.2rem 0.6rem;
     margin: 0 0.2rem;
     cursor: pointer;
-    border: 2px solid var(--medium-green);
-    background-color: var(--medium-green);
+    border: 2px solid var(--background-secondary);
+    background-color: var(--background-secondary);
     color: var(--white-green);
     text-align: center;
     border-radius: 12px 12px 0 0;
@@ -80,22 +79,22 @@ header p {
 
 .tab-button:hover,
 .tab-button.active {
-    background-color: var(--medium-green);
-    color: var(--dark-green);
+    background-color: var(--background-secondary);
+    color: var(--background-primary);
     position: relative;
 }
 
 .tabcontent {
     padding: 1rem;
-    background-color: var(--medium-green);
-    color: var(--white-green);
+    background-color: var(--background-secondary);
+    color: var(--background-primary);
     margin: 0 10rem;
     border-radius: 10px;
 }
 
 .tab-item {
-    background-color: var(--light-green);
-    color: var(--dark-green);
+    background-color: var(--background-primary);
+    color: var(--text-primary);
     margin: 10px 0;
     padding: 1px 15px;
     border-radius: 10px;
@@ -136,15 +135,15 @@ header p {
 }
 
 footer {
-    color: var(--dark-green);
-    background-color: var(--white-green);
+    color: var(--text-primary);
+    background-color: var(--background-primary);
     text-align: center;
     padding: 1rem 0;
     font-size: 0.8rem;
 }
 
 a {
-    color: var(--dark-green);
+    color: var(--text-primary);
 }
 
 .social-icons {
@@ -156,7 +155,7 @@ a {
 }
 
 .social-icons a {
-    color: var(--dark-green);
+    color: var(--text-primary);
     margin-right: 1rem;
 }
 
@@ -165,7 +164,7 @@ a {
 }
 
 .social-icons a:hover {
-    color: var(--medium-green);
+    color: var(--background-secondary);
 }
 
 form p {
@@ -206,8 +205,8 @@ form p {
 .code {
     padding: 0.25em 0.5em;
     font-size: 70%;
-    color: var(--white-green);
-    background-color: var(--dark-green);
+    color: var(--background-primary);
+    background-color: var(--text-primary);
     border-radius: 4px;
     font-family: Menlo, Monaco, "Courier New", monospace;
 }
